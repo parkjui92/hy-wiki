@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시작 위키 그래프</title><style>
+:root{--navy:#0A2540;--blue:#1F6FE0;--blue-deep:#1553B6;--blue-tint:#E8F0FD;--coral:#D2553F;--coral-tint:#FBECE8;
+--bg:#F5F8FC;--line:#D8E1EC;--body:#26405E;--muted:#69788F;--mono:ui-monospace,Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:#ffffff;color:var(--body);font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif}
+main{max-width:1240px;margin:0 auto;padding:22px 20px 40px}
+h1{margin:0 0 4px;font-size:28px;color:var(--navy)}
+.how{margin:0 0 14px;font-size:17px;color:var(--muted)}
+.how b{color:var(--blue-deep)}
+.gr-svg{display:block;width:100%;height:auto;background:#fff;border:1.5px solid var(--line);border-radius:14px}
+.gr-edge{stroke-dasharray:1;stroke-dashoffset:0;stroke-linecap:round;transition:opacity .2s}
+.gr-svg.run .gr-edge{animation:grDraw .55s ease-out both}
+.gr-svg.run .gr-node{animation:grPop .35s ease-out both}
+@keyframes grDraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes grPop{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.gr-edge,.gr-node{animation:none!important}}
+.gr-node{cursor:pointer}
+.gr-node.sel rect{stroke:var(--coral)!important;stroke-width:4!important}
+.gr-svg.has-sel .gr-edge{opacity:.12!important}
+.gr-svg.has-sel .gr-edge.on{opacity:.95!important}
+.legend{margin:8px 2px 12px;font-size:15px;color:var(--muted)}
+.gr-panel{background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 18px;display:flex;flex-direction:column;gap:6px;min-height:120px}
+.gp-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;font-size:21px;color:var(--navy)}
+.gp-k{font-family:var(--mono);font-size:14px;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.gp-t{font-weight:800}
+.gp-f{font-family:var(--mono);font-size:14px;color:var(--muted)}
+.gp-l{font-size:18px;line-height:1.55}
+.gp-l b{color:var(--blue-deep)}
+.gp-l.bf{color:var(--muted)}
+.gp-l.af{color:var(--navy);font-weight:700}
+.gp-m{font-size:17px;color:var(--navy);line-height:1.5}
+.gp-m span{font-family:var(--mono);font-size:13px;color:var(--muted);font-weight:700;margin-right:6px}
+.note{margin-top:12px;font-size:14px;color:var(--muted)}
+</style></head>
+<body><main>
+<h1>시작 위키 그래프</h1>
+<p class="how">파일 이름을 누르면 <b>내용 · 출처</b>가 보임 · 빈 곳을 누르면 선을 다시 그림</p>
+<svg class="v7-fig gr-svg run" viewBox="0 0 1160 258" role="img" aria-label="시작 위키 그래프: 칸은 파일, 선은 링크, 칸을 누르면 아래에 내용과 출처">
+<g font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif" text-anchor="middle">
+<line class="gr-edge" pathLength="1" data-a="03_현장설문과_연구윤리_사례" data-b="업무활용_기대와_성능의_한계" x1="115" y1="208" x2="432" y2="209" style="stroke:var(--muted);stroke-width:7.7;opacity:0.45;animation-delay:0.00s"/>
+<line class="gr-edge" pathLength="1" data-a="03_현장설문과_연구윤리_사례" data-b="자료조사_문서작성의_활용과_검증" x1="115" y1="208" x2="329" y2="97" style="stroke:var(--muted);stroke-width:7.44;opacity:0.45;animation-delay:0.05s"/>
+<line class="gr-edge" pathLength="1" data-a="01_국내_기술영향평가_요약" data-b="숙련도별_효과와_고용_논쟁" x1="115" y1="48" x2="871" y2="97" style="stroke:var(--muted);stroke-width:7.18;opacity:0.45;animation-delay:0.10s"/>
+<line class="gr-edge" pathLength="1" data-a="02_해외_감사원보고서_요약" data-b="숙련도별_효과와_고용_논쟁" x1="115" y1="128" x2="871" y2="97" style="stroke:var(--muted);stroke-width:6.9;opacity:0.45;animation-delay:0.15s"/>
+<line class="gr-edge" pathLength="1" data-a="02_해외_감사원보고서_요약" data-b="업무활용_기대와_성능의_한계" x1="115" y1="128" x2="432" y2="209" style="stroke:var(--muted);stroke-width:6.9;opacity:0.45;animation-delay:0.20s"/>
+<line class="gr-edge" pathLength="1" data-a="02_해외_감사원보고서_요약" data-b="보안_편향_감시_위험" x1="115" y1="128" x2="600" y2="28" style="stroke:var(--muted);stroke-width:6.61;opacity:0.45;animation-delay:0.25s"/>
+<line class="gr-edge" pathLength="1" data-a="01_국내_기술영향평가_요약" data-b="보안_편향_감시_위험" x1="115" y1="48" x2="600" y2="28" style="stroke:var(--muted);stroke-width:6.3;opacity:0.45;animation-delay:0.30s"/>
+<line class="gr-edge" pathLength="1" data-a="02_해외_감사원보고서_요약" data-b="신뢰성과_책임_소재" x1="115" y1="128" x2="768" y2="209" style="stroke:var(--muted);stroke-width:5.97;opacity:0.45;animation-delay:0.35s"/>
+<line class="gr-edge" pathLength="1" data-a="03_현장설문과_연구윤리_사례" data-b="신뢰성과_책임_소재" x1="115" y1="208" x2="768" y2="209" style="stroke:var(--muted);stroke-width:5.97;opacity:0.45;animation-delay:0.40s"/>
+<line class="gr-edge" pathLength="1" data-a="01_국내_기술영향평가_요약" data-b="신뢰성과_책임_소재" x1="115" y1="48" x2="768" y2="209" style="stroke:var(--muted);stroke-width:5.62;opacity:0.45;animation-delay:0.45s"/>
+<line class="gr-edge" pathLength="1" data-a="01_국내_기술영향평가_요약" data-b="업무활용_기대와_성능의_한계" x1="115" y1="48" x2="432" y2="209" style="stroke:var(--muted);stroke-width:5.62;opacity:0.45;animation-delay:0.50s"/>
+<line class="gr-edge" pathLength="1" data-a="02_해외_감사원보고서_요약" data-b="목차" x1="115" y1="128" x2="600" y2="104" style="stroke:var(--muted);stroke-width:5.23;opacity:0.45;animation-delay:0.55s"/>
+<line class="gr-edge" pathLength="1" data-a="02_해외_감사원보고서_요약" data-b="자료조사_문서작성의_활용과_검증" x1="115" y1="128" x2="329" y2="97" style="stroke:var(--muted);stroke-width:5.23;opacity:0.45;animation-delay:0.60s"/>
+<line class="gr-edge" pathLength="1" data-a="01_국내_기술영향평가_요약" data-b="목차" x1="115" y1="48" x2="600" y2="104" style="stroke:var(--muted);stroke-width:4.81;opacity:0.45;animation-delay:0.65s"/>
+<line class="gr-edge" pathLength="1" data-a="03_현장설문과_연구윤리_사례" data-b="목차" x1="115" y1="208" x2="600" y2="104" style="stroke:var(--muted);stroke-width:4.32;opacity:0.45;animation-delay:0.70s"/>
+<line class="gr-edge" pathLength="1" data-a="03_현장설문과_연구윤리_사례" data-b="보안_편향_감시_위험" x1="115" y1="208" x2="600" y2="28" style="stroke:var(--muted);stroke-width:3.75;opacity:0.45;animation-delay:0.75s"/>
+<line class="gr-edge" pathLength="1" data-a="01_국내_기술영향평가_요약" data-b="자료조사_문서작성의_활용과_검증" x1="115" y1="48" x2="329" y2="97" style="stroke:var(--muted);stroke-width:3.0;opacity:0.45;animation-delay:0.80s"/>
+<line class="gr-edge" pathLength="1" data-a="목차" data-b="숙련도별_효과와_고용_논쟁" x1="600" y1="104" x2="871" y2="97" style="stroke:var(--blue);stroke-width:4.32;opacity:0.55;animation-delay:0.85s"/>
+<line class="gr-edge" pathLength="1" data-a="목차" data-b="신뢰성과_책임_소재" x1="600" y1="104" x2="768" y2="209" style="stroke:var(--blue);stroke-width:4.32;opacity:0.55;animation-delay:0.90s"/>
+<line class="gr-edge" pathLength="1" data-a="목차" data-b="업무활용_기대와_성능의_한계" x1="600" y1="104" x2="432" y2="209" style="stroke:var(--blue);stroke-width:4.32;opacity:0.55;animation-delay:0.95s"/>
+<line class="gr-edge" pathLength="1" data-a="신뢰성과_책임_소재" data-b="자료조사_문서작성의_활용과_검증" x1="768" y1="209" x2="329" y2="97" style="stroke:var(--blue);stroke-width:4.32;opacity:0.55;animation-delay:1.00s"/>
+<line class="gr-edge" pathLength="1" data-a="업무활용_기대와_성능의_한계" data-b="자료조사_문서작성의_활용과_검증" x1="432" y1="209" x2="329" y2="97" style="stroke:var(--blue);stroke-width:4.32;opacity:0.55;animation-delay:1.05s"/>
+<line class="gr-edge" pathLength="1" data-a="목차" data-b="보안_편향_감시_위험" x1="600" y1="104" x2="600" y2="28" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.10s"/>
+<line class="gr-edge" pathLength="1" data-a="목차" data-b="자료조사_문서작성의_활용과_검증" x1="600" y1="104" x2="329" y2="97" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.15s"/>
+<line class="gr-edge" pathLength="1" data-a="보안_편향_감시_위험" data-b="숙련도별_효과와_고용_논쟁" x1="600" y1="28" x2="871" y2="97" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.20s"/>
+<line class="gr-edge" pathLength="1" data-a="보안_편향_감시_위험" data-b="신뢰성과_책임_소재" x1="600" y1="28" x2="768" y2="209" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.25s"/>
+<line class="gr-edge" pathLength="1" data-a="보안_편향_감시_위험" data-b="업무활용_기대와_성능의_한계" x1="600" y1="28" x2="432" y2="209" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.30s"/>
+<line class="gr-edge" pathLength="1" data-a="숙련도별_효과와_고용_논쟁" data-b="신뢰성과_책임_소재" x1="871" y1="97" x2="768" y2="209" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.35s"/>
+<line class="gr-edge" pathLength="1" data-a="숙련도별_효과와_고용_논쟁" data-b="업무활용_기대와_성능의_한계" x1="871" y1="97" x2="432" y2="209" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.40s"/>
+<line class="gr-edge" pathLength="1" data-a="신뢰성과_책임_소재" data-b="업무활용_기대와_성능의_한계" x1="768" y1="209" x2="432" y2="209" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.45s"/>
+<line class="gr-edge" pathLength="1" data-a="보안_편향_감시_위험" data-b="자료조사_문서작성의_활용과_검증" x1="600" y1="28" x2="329" y2="97" style="stroke:var(--blue);stroke-width:3.0;opacity:0.55;animation-delay:1.50s"/>
+<line class="gr-edge" pathLength="1" data-a="목차" data-b="변경기록" x1="600" y1="104" x2="600" y2="160" style="stroke:var(--blue);stroke-width:3.75;opacity:0.55;animation-delay:1.55s"/>
+<g class="gr-node" data-n="01_국내_기술영향평가_요약" style="animation-delay:0.00s"><rect x="28" y="20" width="173" height="56" rx="10" style="fill:var(--bg);stroke:var(--muted);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="115" y="43">01_국내_</tspan><tspan x="115" y="65">기술영향평가_요약</tspan></text></g>
+<g class="gr-node" data-n="02_해외_감사원보고서_요약" style="animation-delay:0.04s"><rect x="28" y="100" width="173" height="56" rx="10" style="fill:var(--bg);stroke:var(--muted);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="115" y="123">02_해외_</tspan><tspan x="115" y="145">감사원보고서_요약</tspan></text></g>
+<g class="gr-node" data-n="03_현장설문과_연구윤리_사례" style="animation-delay:0.08s"><rect x="28" y="180" width="173" height="56" rx="10" style="fill:var(--bg);stroke:var(--muted);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="115" y="203">03_현장설문과_</tspan><tspan x="115" y="225">연구윤리_사례</tspan></text></g>
+<g class="gr-node" data-n="보안_편향_감시_위험" style="animation-delay:0.12s"><rect x="538" y="0" width="124" height="56" rx="10" style="fill:var(--blue-tint);stroke:var(--blue);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="600" y="23">보안_편향_</tspan><tspan x="600" y="45">감시_위험</tspan></text></g>
+<g class="gr-node" data-n="숙련도별_효과와_고용_논쟁" style="animation-delay:0.16s"><rect x="784" y="69" width="173" height="56" rx="10" style="fill:var(--blue-tint);stroke:var(--blue);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="871" y="92">숙련도별_효과와_</tspan><tspan x="871" y="114">고용_논쟁</tspan></text></g>
+<g class="gr-node" data-n="신뢰성과_책임_소재" style="animation-delay:0.20s"><rect x="714" y="181" width="107" height="56" rx="10" style="fill:var(--blue-tint);stroke:var(--blue);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="768" y="204">신뢰성과_</tspan><tspan x="768" y="226">책임_소재</tspan></text></g>
+<g class="gr-node" data-n="업무활용_기대와_성능의_한계" style="animation-delay:0.24s"><rect x="345" y="181" width="173" height="56" rx="10" style="fill:var(--blue-tint);stroke:var(--blue);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="432" y="204">업무활용_기대와_</tspan><tspan x="432" y="226">성능의_한계</tspan></text></g>
+<g class="gr-node" data-n="자료조사_문서작성의_활용과_검증" style="animation-delay:0.28s"><rect x="226" y="69" width="207" height="56" rx="10" style="fill:var(--blue-tint);stroke:var(--blue);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="329" y="92">자료조사_문서작성의_</tspan><tspan x="329" y="114">활용과_검증</tspan></text></g>
+<g class="gr-node" data-n="목차" style="animation-delay:0.32s"><rect x="571" y="87" width="57" height="34" rx="10" style="fill:var(--navy);stroke:var(--navy);stroke-width:1.6"/>
+<text font-size="18" style="fill:#ffffff;font-weight:800"><tspan x="600" y="110">목차</tspan></text></g>
+<g class="gr-node" data-n="변경기록" style="animation-delay:0.36s"><rect x="555" y="143" width="90" height="34" rx="10" style="fill:#ffffff;stroke:var(--navy);stroke-width:1.6"/>
+<text font-size="18" style="fill:var(--navy);font-weight:700"><tspan x="600" y="166">변경기록</tspan></text></g>
+</g></svg>
+<p class="legend">회색 원자료 · 코랄 칸 추가자료 · 파란 주제 페이지 · 남색 목차 · 흰 변경기록 · 선 굵기는 링크 수</p>
+<div class="gr-panel" aria-live="polite"></div>
+<p class="note">이 그래프는 위키 파일 안의 마크다운 링크를 세어 그린 것 · 연결이 있다는 것만 보여 주므로 문장이 맞는지는 페이지를 열어 원자료와 대조 · 내 위키는 페이지 이름과 연결이 다를 수 있음</p>
+</main>
+<script type="application/json" id="gr-data">{"first": "목차", "nodes": {"01_국내_기술영향평가_요약": {"k": "원자료", "file": "01_국내_기술영향평가_요약.md", "title": "[원자료 01] 국내 기술영향평가 보고서 발췌 요약 (KISTEP 2025)", "lines": ["수업 실습용 요약본 (교수자가 원문을 읽고 발췌·요약, 원문 전체 아님)", "한국과학기술기획평가원(KISTEP), 「2025년 기술영향평가 결과보고서: AI 에이전트」, 2026. 2. 발간 (본문의 쪽은 인쇄 쪽 기준)"], "src": [], "pages": ["보안_편향_감시_위험", "숙련도별_효과와_고용_논쟁", "신뢰성과_책임_소재", "업무활용_기대와_성능의_한계", "자료조사_문서작성의_활용과_검증"]}, "02_해외_감사원보고서_요약": {"k": "원자료", "file": "02_해외_감사원보고서_요약.md", "title": "[원자료 02] 해외 감사원 보고서 발췌 요약 (미국 GAO 2025 2건)", "lines": ["수업 실습용 요약본 (교수자가 원문을 읽고 발췌·요약, 쪽은 각 보고서의 인쇄 쪽 기준)"], "src": [], "pages": ["보안_편향_감시_위험", "숙련도별_효과와_고용_논쟁", "신뢰성과_책임_소재", "업무활용_기대와_성능의_한계", "자료조사_문서작성의_활용과_검증"]}, "03_현장설문과_연구윤리_사례": {"k": "원자료", "file": "03_현장설문과_연구윤리_사례.md", "title": "[원자료 03] 국내 공무원 설문, 공공 부문 AI 에이전트 도입 단계, 정책연구 허위 인용 사례", "lines": ["수업 실습용 요약본 (교수자가 보도 · 정부 발표 원문을 읽고 정리)"], "src": [], "pages": ["보안_편향_감시_위험", "신뢰성과_책임_소재", "업무활용_기대와_성능의_한계", "자료조사_문서작성의_활용과_검증"]}, "목차": {"k": "목차", "file": "목차.md", "title": "1부 공통실습 위키: 공공 업무와 AI 에이전트", "lines": [], "src": ["01", "02", "03"], "pages": ["업무활용_기대와_성능의_한계", "숙련도별_효과와_고용_논쟁", "신뢰성과_책임_소재", "보안_편향_감시_위험", "자료조사_문서작성의_활용과_검증"]}, "변경기록": {"k": "변경기록", "file": "변경기록.md", "title": "변경기록", "lines": ["2026-11-06 23:32 위키 처음 만들기", "[교수자 기록] 수업 시작 상태 (2026-11-06)"], "src": [], "pages": []}, "보안_편향_감시_위험": {"k": "주제 페이지", "file": "보안_편향_감시_위험.md", "title": "보안·편향·감시 위험", "lines": ["보안: GAO는 개인정보·내부 시스템 접근 권한을 받은 에이전트가 해커의 표적이 되고 프롬프트 주입 공격으로 안전장치가 우회될 수 있다고 보며, 국내 공무원 설문…", "언어·문화 편향: 국내 보고서는 특정 언어·문화권 데이터 편중이 다문화 집단을 주변화할 우려를, GAO는 학습 데이터가 주로 영어에 집중되어 비영어권 사용자에게…"], "src": ["02", "03", "01"], "pages": ["신뢰성과_책임_소재", "숙련도별_효과와_고용_논쟁", "업무활용_기대와_성능의_한계"]}, "숙련도별_효과와_고용_논쟁": {"k": "주제 페이지", "file": "숙련도별_효과와_고용_논쟁.md", "title": "숙련도별 효과와 고용 논쟁", "lines": ["AI 도구의 생산성 효과가 어느 숙련 수준에서 크게 나타나는지에 대해 국내 보고서와 GAO 보고서가 인용한 연구 결과가 서로 반대 방향이다. 국내 보고서가 재인용…", "두 연구 모두 AI 에이전트가 아니라 AI 도구·생성형 AI 보조 도구에 관한 〔유사 기술〕 근거이며, 국내 보고서 쪽은 어떤 업무·도구·지표로 잰 연구인지 요약…"], "src": ["01", "02"], "pages": ["업무활용_기대와_성능의_한계", "신뢰성과_책임_소재", "보안_편향_감시_위험"]}, "신뢰성과_책임_소재": {"k": "주제 페이지", "file": "신뢰성과_책임_소재.md", "title": "신뢰성과 책임 소재", "lines": ["국내 기술영향평가 보고서, GAO 보고서, 국내 공무원 설문이 모두 AI가 낸 결과에 오류가 생겼을 때 누가 책임지는가를 핵심 우려로 다룬다.", "공무원 설문에서 최대 우려 1위는 '오류 발생 시 책임 소재 불분명'(49.8%)이었고, 응답자의 96.9%는 AI 결과물을 반드시 검토해야 한다고 답했다. 둘…"], "src": ["01", "02", "03"], "pages": ["자료조사_문서작성의_활용과_검증", "업무활용_기대와_성능의_한계", "보안_편향_감시_위험", "숙련도별_효과와_고용_논쟁"]}, "업무활용_기대와_성능의_한계": {"k": "주제 페이지", "file": "업무활용_기대와_성능의_한계.md", "title": "업무 활용의 기대와 성능의 한계", "lines": ["국내 기술영향평가 보고서와 미국 회계감사원(GAO) 보고서는 AI 에이전트가 민원 응대, 데이터 입력, 대량 자료 요약 같은 업무를 보조해 생산성을 높일 수 있다…", "성능을 잰 수치는 GAO가 인용한 소프트웨어 개발 과업 평가 하나다. 시험 대상 중 최고 성능의 AI 에이전트도 과업의 약 30%만 자율적으로 끝까지 수행했으며…"], "src": ["01", "02", "03"], "pages": ["자료조사_문서작성의_활용과_검증", "숙련도별_효과와_고용_논쟁", "신뢰성과_책임_소재", "보안_편향_감시_위험"]}, "자료조사_문서작성의_활용과_검증": {"k": "주제 페이지", "file": "자료조사_문서작성의_활용과_검증.md", "title": "자료 조사와 문서 작성의 활용과 검증", "lines": ["GAO는 생성형 AI가 대량 자료 요약과 연구 가속을 도울 수 있다고 보고, 국내 공무원들도 AI 활용 기대 효과로 '문서 요약 및 회의록 작성'과 '법령·지침서…", "반면 정부 발주 보고서와 컨설팅사 보고서에서 생성형 AI가 만든 허위 인용이 발견된 사례가 있고, 그중 호주 사례는 계약 대금 일부 환불로 이어졌다."], "src": ["02", "03", "01"], "pages": ["신뢰성과_책임_소재", "업무활용_기대와_성능의_한계", "보안_편향_감시_위험"]}}, "base": false}</script>
+<script>(function(){var D=JSON.parse(document.getElementById('gr-data').textContent);var g=document.querySelector('.gr-svg'),P=document.querySelector('.gr-panel');
+function e(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function short(n){return n.replace(/_/g,' ')}
+function render(n){var d=D.nodes[n];if(!d)return;var h='<div class="gp-h"><span class="gp-k">'+e(d.k)+'</span><span class="gp-t">'+e(d.title||short(n))+'</span><span class="gp-f">'+e(d.file)+'</span></div>';
+if(d.pair){h+='<div class="gp-l bf"><b>반영 전</b> '+e(d.pair.before||'(없음 · 새로 더해진 문장)')+'</div><div class="gp-l af"><b>반영 후</b> '+e(d.pair.after)+'</div>';if(d.log)h+='<div class="gp-m"><span>변경기록</span>'+e(d.log)+'</div>'}
+(d.lines||[]).forEach(function(l){h+='<div class="gp-l">'+e(l)+'</div>'});
+var m=[];if(d.src&&d.src.length)m.push('<span>출처</span>'+e(d.src.join(' · ')));if(d.pages&&d.pages.length)m.push('<span>'+((d.k==='원자료'||d.k==='추가자료')?'이 자료를 쓰는 페이지':'연결된 페이지')+'</span>'+e(d.pages.map(short).join(' · ')));if(m.length)h+='<div class="gp-m">'+m.join('<br>')+'</div>';
+if(D.base&&d.same)h+='<div class="gp-m"><span>비교</span>추가자료 반영으로는 바뀌지 않은 페이지</div>';
+P.innerHTML=h;g.querySelectorAll('.gr-node').forEach(function(x){x.classList.toggle('sel',x.dataset.n===n)});g.classList.add('has-sel');g.querySelectorAll('.gr-edge').forEach(function(l){l.classList.toggle('on',l.dataset.a===n||l.dataset.b===n)})}
+g.addEventListener('click',function(ev){var x=ev.target.closest('.gr-node');if(x){render(x.dataset.n);return}g.classList.remove('run');void g.getBoundingClientRect();g.classList.add('run')});render(D.first)})();</script>
+</body></html>
